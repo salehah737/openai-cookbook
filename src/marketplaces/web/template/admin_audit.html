@@ -1,0 +1,13 @@
+<h2>Audit Logs</h2>
+<table border="1">
+    <tr><th>Time</th><th>User</th><th>Action</th><th>Details</th></tr>
+        {% for entry in logs %}
+            <tr>
+                    <td>{{ entry.timestamp }}</td>
+                            <td>{{ entry.user }}</td>
+                                    <td>{{ entry.action }}</td>
+                                            <td>{{ entry.details }}</td>
+                                                </tr>
+                                                    {% endfor %}
+                                                    </table>
+                                                    
